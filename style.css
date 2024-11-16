@@ -1,0 +1,128 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #CF0A0A;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.logo1{
+    color: #DC5F00;
+    text-decoration: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+}
+
+/* Hidden Content */
+.hidden-content {
+    display: none;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Login Page */
+.login-page {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-page h2 {
+    text-align: center;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-page button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-page button:hover {
+    background-color: #f39c12;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
